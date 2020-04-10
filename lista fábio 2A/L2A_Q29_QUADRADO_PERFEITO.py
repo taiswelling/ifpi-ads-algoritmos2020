@@ -6,6 +6,25 @@ número de 4 dígitos e verifique se ele é um quadrado perfeito.'''
 
 num = int(input('Digite um número de 4 dígitos:\n'))
 
-
 import math
-raiz=
+
+raiz=math.sqrt(num)
+#print(f'{raiz}')
+
+a= num//100
+#print(f'{a}') (usado para conferir se resulta nos dois primeiros algarismos)
+
+b=num%100
+#print(f'{b}') (usado para conferir se resulta nos dois ultimos algarismos)
+
+soma = a+b
+
+if raiz==soma:
+    print(40*'_')
+    print("O número digitado é quadrado perfeito")
+    print(40*'_')
+
+else:
+    print(50*'_')
+    print('O número digitado não é um quadrado perfeito')
+    print(50*'_')
